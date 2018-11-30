@@ -1,7 +1,22 @@
+	
+			
+			h2{
+				background-color:#002A39;
+				bottom: 0px;
+				width: 100%;
+				font-size: 20px;
+			}
+			img{
+				position: none;
+				width: 80%;
+			}
+
+
+
 
 			.mainNav {
-				background-color:magenta;
-				position:fixed;
+				background-color:#002A39;
+				position:sticky;
 				top: 0px;
 				width: 100%;
 				z-index: 100;
@@ -20,8 +35,8 @@
 			}
 			
 
-			.mainNav a:hover {
-				background-color:yellow;
+			.mainNav h2:hover {
+				color:orange;
 			}
 
 			.mainNav .icon{
