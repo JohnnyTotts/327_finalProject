@@ -1,4 +1,11 @@
-
+			h1{
+				background-color:#002A39;
+				bottom: 0px;
+				width: 100%;
+				font: 35px "Arial", sans-serif;
+				color: white;
+				
+			}
 				
 			h2{
 				background-color:#002A39;
@@ -13,14 +20,9 @@
  				 font: 20px "Arial", sans-serif;
   				color: #111;
 			}
-			img{
-				margin-top: 30px;
-				
-				width: 100%;
-			}
+		
 
 			p{
-				
 				font-family:'Libre Baskerville', serif; 
 				font-size: 35pt;
 				position:relative;
@@ -29,6 +31,18 @@
 				color:white;
 				padding:20px;
 			}
+
+			.end p{
+				font-family:'Libre Baskerville', serif; 
+				font-size: 35pt;
+				position:relative;
+				text-align:center;
+				background-color: #002A39;
+				color:white;
+				padding:20px;
+			}
+
+
 
 			.residentialMain {			/*Start of Navigation Box*/
 
@@ -99,7 +113,7 @@ body, html {
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  opacity: 0.65; /* This is just for style. Feel free to delete. */
+  opacity: 1; /* This is just for style. Feel free to delete. */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -115,18 +129,18 @@ body, html {
 /* 4. Parallax isn't very compatible on mobile devices so you will want to add a media query that changes the value of the background attachment when the width of your browser goes below a certain number. */
 
 .bgimg-1 {
-  background-image: url("images/residential.jpg");
-  min-height: 100%;
+  background-image: url("../images/residential.jpg");
+  min-height: 90%;
 }
 
 .bgimg-2 {
-  background-image: url("images/redDoor.jpg");
+  background-image: url("../images/redDoor.jpg");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("images/interior.jpg");
-  min-height: 400px;
+  background-image: url("../images/interior.jpg");
+  min-height: 600px;
 }
 
 .caption {
