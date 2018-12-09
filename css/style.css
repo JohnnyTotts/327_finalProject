@@ -47,6 +47,36 @@
 			}
 
 
+			iframe{
+				position: center;
+  				width: 100%;
+  				padding: 10px;
+			}
+			.button{
+  				border: none;
+				color: black;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+
+
+				
+		
+
+			ul li{
+				display: inline;
+				margin: auto;
+				padding: 80px;
+  				font-size: 15px;
+
+			}
+
+
 
 			.residentialMain {			/*Start of Navigation Box*/
 
