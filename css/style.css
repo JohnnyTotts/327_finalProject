@@ -10,7 +10,6 @@
 				
 			h2{
 				background-color:#002A39;
-				bottom: 0px;
 				width: 100%;
 				font-family: "Futura";
 				font-size: 35px;
@@ -25,10 +24,13 @@
   				color: white;
 			}
 
-			p{
-				font:20px "Arial", sans-serif;
-				color: white;
+			img{
+				margin-left: 1px;
+				height: 30px;
+				width: 30px;
+
 			}
+
 
 
 
@@ -47,7 +49,7 @@
 				position:relative;
 				text-align:center;
 				background-color: #550C18;
-				color:black;
+				color:white;
 				padding:20px;
 			}
 
@@ -84,10 +86,10 @@
 				
 		
 
-			ul li{
+			li{
 				display: inline;
-				margin: auto;
-				padding: 80px;
+				text-align: center;
+				padding: 90px;
   				font-size: 15px;
 
 			}
@@ -105,7 +107,7 @@
 			.mainNav {
 				background-color:#002A39;
 				position:fixed;
-				height: 90px;
+				height: 95px;
 				width: 100%;
 				z-index: 100;
 				text-align: center;
@@ -115,7 +117,6 @@
 
 			 .mainNav a {
 			 	color: white;
-
 			 	margin: 1%;
 			 	text-decoration: none;
 			 	display: inline-block;
@@ -137,14 +138,10 @@
 				max-width: 65px;
 				margin: 0.5%;
 				float:left;
-				
-				
-
 			}
 
 			.logo h2 {
 				display: inline;
-
 			}
 
 			.logo .icon{
