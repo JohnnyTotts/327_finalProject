@@ -29,13 +29,8 @@
 				
 
 		
+			
 
-			.socialIcon{
-				margin-left: 1px;
-				height: 30px;
-				width: 30px;
-				size:30px;
-			}
 
 			.quote{
 				color: white;
@@ -92,20 +87,39 @@
 				font-size: 16px;
 				margin: 4px 2px;
 				size: 30px;
-				/*cursor: pointer;*/
+				cursor: pointer;
+
 			}
 
 
 				
 		
 
-			li{
-				display: inline;
-				text-align: center;
+			ul{
+				display: inline-block;
+				text-align: left;
 				padding: 90px;
   				font-size: 15px;
 
 			}
+
+
+			.socialIcon{
+				margin-left: 1px;
+				height: 30px;
+				width: 30px;
+				size:30px;
+
+			}
+
+			.licenseNumber{
+			    	color:orange;
+			    	padding:5px;
+			    	text-align: center;
+			    	font-family:"Arial";
+			    	font-size: 25px;
+			    	background-color:#002A39;
+			    }
 
 
 
@@ -166,6 +180,9 @@
 				margin-top:4%;
 			}
 
+
+			
+
 			
 			/* controls for repsonsive slide */
 			@media screen and (max-width: 600px) {
@@ -205,84 +222,57 @@
 				.text_bottomSlide{
 					font-size: 15px;}
 
-				p {
-					font-size:15px;
-			      }
-			   ul {
-			    	display:inline-grid;
-			    	text-align: left;
-			    	padding: 90px;
-			    	font-size: 15px
-
+				.socialIcon{
+					max-height: 40px;
+				}
+				.licenseNumber{
+			    	color:orange;
+			    	padding:5px;
+			    	text-align: center;
+			    	font-family:"Arial";
+			    	font-size: 25px;
 			    }
 
+			    .dot{
+			    	height:5px;
 
-				@media screen and (max-width: 900px) {
-					.mainNav a{display: none;}
-					.mainNav a.icon {
+			    }
+			    
+				p{
+					font-size:15px;
+			      }
+
+				}
+
+			/* controls for repsonsive slide */
+			@media screen and (max-width: 900px) {
+				.mainNav a{display: none;}
+				.mainNav a.icon {
 					float: right;
 					display: block;
 				}
 				
 			}
-
-
-				@media screen and (max-width: 900px) {
-					.mainNav.responsive {position:relative;}
-					.mainNav.responsive .icon {
+			/* controls for hamburger dropdown */
+			@media screen and (max-width: 900px) {
+				.mainNav.responsive {position:relative;}
+				.mainNav.responsive .icon {
 					position:absolute;
 					right:0;
 					top:0;
 				  }
-					.mainNav.responsive a {
+				  .mainNav.responsive a {
 					float: none;
 					display: block;
 					text-align: left;
 					margin-left:20%;
 
 				  }
-				
-				.logo{
-					margin: 2%;
-					
-				  } 
-				
-				h2{
-					font-size:15px;
-					
-				  }
-
-				.text_bottomSlide{
-					font-size: 15px;}
-
-				p {
-					font-size:15px;
-			      }
-			   ul {
-			    	display:inline-grid;
-			    	text-align: left;
-			    	padding: 90px;
-			    	font-size: 15px
-
-			    }
-			    .quote{
-			    color: white;
-				font-family: "Arial";
-				text-decoration: none;
-			    }
-
-
-
-
 			}
 
-
-
+			
 
 				/* End Of Navigation Button*/
-
-
-			
 
 /*START OF PARALLAX CODE*/
 body, html {
@@ -320,6 +310,15 @@ body, html {
   min-height: 600px;
 }
 
+@media only screen and (max-width: 600px) {
+  .res_1, .res_2, .res_3 {
+  position: relative;
+  opacity: 1; /* This is just for style. Feel free to delete. */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+} 
 @media only screen and (max-width: 600px) {
   .res_1, .res_2, .res_3 {
   position: relative;
@@ -399,21 +398,23 @@ body, html {
 }
 
 .cab_2 {
-  background-image: url("../images/white_spaceCab1.jpg");
+  background-image: url("../images/cabinets_brown.jpg");
   min-height: 400px;
 }
 
 .cab_3 {
-  background-image: url("../images/white_spaceCab2.jpg");
+  background-image: url("../images/cabinets_white.jpg");
   min-height: 600px;
 }
 
 
-
+  }
 @media only screen and (max-width: 600px) {
   .cab_1, .cab_2, .cab_3 {
     background-attachment: scroll;
   }
+
+
   /* End Cabinet Parallax Content*/
 } 
 .caption {
@@ -546,8 +547,10 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 			@media only screen and (max-width: 600px) {
  			 .residentialMaininfo {font-size: 42px}
+			
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
   .prev, .next,.text {font-size: 11px}					
 
   /*END of Slideshow Box*/
+
