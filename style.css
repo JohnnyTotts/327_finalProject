@@ -1,23 +1,140 @@
-	
 			
-			h2{
+
+			h1{
 				background-color:#002A39;
 				bottom: 0px;
 				width: 100%;
-				font-size: 20px;
+				font: 35px "Arial", sans-serif;
+				color: white;
+				
 			}
-			img{
-				position: none;
-				width: 80%;
+				
+			h2{
+				background-color:#002A39;
+				width: 100%;
+				font-family: "Futura";
+				font-size: 25px;
+				
 			}
 
 
+			h3 {
+  				letter-spacing: 5px;
+ 				 text-transform: uppercase;
+ 				 font: 20px "Arial", sans-serif;
+  				color: white;
+			}
+
+			
+				
+
+		
+			}
+
+
+			.quote{
+				color: white;
+				font-family: "Arial";
+				text-decoration: none;
+			}
+
+
+
+
+			.lastLine h2{
+				width: 100%;
+				position: center;
+				background-color:#550C18;
+				display: inline;
+
+			}
+
+
+			p{
+				font-family:'Libre Baskerville', serif; 
+				font-size: 35pt;
+				position:relative;
+				text-align:center;
+				background-color: #550C18;
+				color:white;
+				padding:20px;
+			}
+
+
+
+			.end p{
+				font-family:'Libre Baskerville', serif; 
+				font-size: 35pt;
+				position:relative;
+				text-align:center;
+				background-color: #002A39;
+				color:black;
+				padding:20px;
+			}
+
+			iframe{
+				position: center;
+  				width: 100%;
+  				padding: 10px;
+			}
+			.button{
+  				border: none;
+				color: black;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				size: 30px;
+				cursor: pointer;
+
+			}
+
+
+				
+		
+
+			ul{
+				display: inline-block;
+				text-align: left;
+				padding: 90px;
+  				font-size: 15px;
+
+			}
+
+
+			.socialIcon{
+				margin-left: 1px;
+				height: 30px;
+				width: 30px;
+				size:30px;
+
+			}
+
+			.licenseNumber{
+			    	color:orange;
+			    	padding:5px;
+			    	text-align: center;
+			    	font-family:"Arial";
+			    	font-size: 25px;
+			    	background-color:#002A39;
+			    }
+
+
+
+			.residentialMain {			/*Start of Navigation Box*/
+
+			}
+			.secondaryInfo{
+				background-color: #c4c4c4;
+			}
 
 
 			.mainNav {
 				background-color:#002A39;
-				position:sticky;
-				top: 0px;
+				position:fixed;
+				top: 0;
 				width: 100%;
 				z-index: 100;
 				text-align: center;
@@ -25,12 +142,11 @@
 			
 			}
 
-			 .mainNav a{
+			 .mainNav a {
 			 	color: white;
-			 	padding: 10px;
+			 	padding: 10px 16px;
 			 	text-decoration: none;
-			 	font-family: Arial;
-			 	font-size: 20px;
+			 	font-size: 15px;
 			 	display: inline-block;
 			}
 			
@@ -39,10 +155,35 @@
 				color:orange;
 			}
 
-			.mainNav .icon{
+			.mainNav .icon {
 				display:none;
 				float:right;
 			}
+
+
+			.logo{
+				max-height: 85px;
+				max-width: 65px;
+				margin: 0.5%;
+				float:left;
+			}
+
+			.logo h2 {
+				display: inline;
+			}
+
+			.logo .icon{
+				display:inline;
+			}
+
+			.icon{
+				margin-top:4%;
+			}
+
+
+			
+
+			
 			/* controls for repsonsive slide */
 			@media screen and (max-width: 600px) {
 				.mainNav a{display: none;}
@@ -50,6 +191,7 @@
 					float: right;
 					display: block;
 				}
+				
 			}
 			/* controls for hamburger dropdown */
 			@media screen and (max-width: 600px) {
@@ -58,14 +200,262 @@
 					position:absolute;
 					right:0;
 					top:0;
-				}
+				  }
 				.mainNav.responsive a {
 					float: none;
 					display: block;
-					text-align: center;
+					text-align: left;
+					margin-left:20%;
+
+				  }
+				
+				.logo{
+					margin: 2%;
+					
+				  } 
+				
+				h2{
+					font-size:15px;
+					
+				  }
+
+	
+
+				.text_bottomSlide{
+					font-size: 15px;}
+
+				.socialIcon{
+					max-height: 40px;
 				}
-					}
-* {box-sizing: border-box}
+				.licenseNumber{
+			    	color:orange;
+			    	padding:5px;
+			    	text-align: center;
+			    	font-family:"Arial";
+			    	font-size: 25px;
+			    }
+
+			    .dot{
+			    	height:5px;
+
+			    }
+
+			    
+				p{
+					font-size:15px;
+			      }
+
+				}
+
+				/* controls for repsonsive slide */
+			@media screen and (max-width: 900px) {
+				.mainNav a{display: none;}
+				.mainNav a.icon {
+					float: right;
+					display: block;
+				}
+				
+			}
+			/* controls for hamburger dropdown */
+			@media screen and (max-width: 900px) {
+				.mainNav.responsive {position:relative;}
+				.mainNav.responsive .icon {
+					position:absolute;
+					right:0;
+					top:0;
+				  }
+				  .mainNav.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+					margin-left:20%;
+
+				  }
+			}
+
+			
+
+				/* End Of Navigation Button*/
+
+/*START OF PARALLAX CODE*/
+body, html {
+  height: 100%; /* Note that the height of the body and html is declared in %. In order to use % with .bgimg-1 (see below), we have to declare 100% height on the body and html tags.  */
+  margin: 0;
+  font: 15px "Lato", sans-serif;
+  color: #777;
+}
+
+.res_1, .res_2, .res_3 {
+  position: relative;
+  opacity: 1; /* This is just for style. Feel free to delete. */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* 3. This is where the magic happens. To trigger the parallax effect, you need to add the attribute "background-attachment" along with the appropriate value. Use w3schools. HINT HINT. */
+}
+
+
+
+/* 4. Parallax isn't very compatible on mobile devices so you will want to add a media query that changes the value of the background attachment when the width of your browser goes below a certain number. */
+
+.res_1 {
+  background-image: url("../images/residential.jpg");
+  min-height: 80%;
+}
+
+.res_2 {
+  background-image: url("../images/redDoor.jpg");
+  min-height: 400px;
+}
+
+.res_3 {
+  background-image: url("../images/interior.jpg");
+  min-height: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+  .res_1, .res_2, .res_3 {
+  position: relative;
+  opacity: 1; /* This is just for style. Feel free to delete. */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+} 
+@media only screen and (max-width: 900px) {
+  .res_1, .res_2, .res_3 {
+  position: relative;
+  opacity: 1; /* This is just for style. Feel free to delete. */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+} 
+
+/* Start commercial Parallax Content */
+
+.com_1, .com_2, .com_3 {
+  position: relative;
+  opacity: 1; 
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+
+.com_1 {
+  background-image: url("../images/commercial_main.jpg");
+  min-height: 90%;
+}
+
+.com_2 {
+  background-image: url("../images/commercial_spray.jpg");
+  min-height: 400px;
+}
+
+.com_3 {
+  background-image: url("../images/commercial_exterior.jpg");
+  min-height: 600px;
+}
+/* End Commercial Parallax Content */
+
+
+/* Start Industrial Parallax Content */
+
+.ind_1, .ind_2, .ind_3 {
+  position: relative;
+  opacity: 1; 
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+
+.ind_1 {
+  background-image: url("../images/spray_safety.png");
+  min-height: 90%;
+}
+
+.ind_2 {
+  background-image: url("../images/industrial_scissor.jpg");
+  min-height: 400px;
+}
+
+.ind_3 {
+  background-image: url("../images/industrial.png");
+  min-height: 600px;
+}
+/* End Industrial Parallax Content */
+
+/* Start Cabinet Parallax Content*/
+.cab_1, .cab_2, .cab_3 {
+  position: relative;
+  opacity: 1; /* This is just for style. Feel free to delete. */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* 3. This is where the magic happens. To trigger the parallax effect, you need to add the attribute "background-attachment" along with the appropriate value. Use w3schools. HINT HINT. */
+}
+
+.cab_1 {
+  background-image: url("../images/cabinets_booth.jpg");
+  min-height: 90%;
+}
+
+.cab_2 {
+  background-image: url("../images/cabinets_brown.jpg");
+  min-height: 400px;
+}
+
+.cab_3 {
+  background-image: url("../images/cabinets_white.jpg");
+  min-height: 600px;
+}
+
+
+  }
+@media only screen and (max-width: 600px) {
+  .cab_1, .cab_2, .cab_3 {
+    background-attachment: scroll;
+  }
+
+
+  /* End Cabinet Parallax Content*/
+} 
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  opacity:.75;
+ 
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  
+}
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+/*ENDOF PARALLAX CODE*/
+
+
+
+
+
+
+
+* {box-sizing: border-box} 							/*Start of Slideshow Box*/
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
@@ -106,8 +496,8 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
+  color: #000000;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -157,7 +547,13 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+			@media only screen and (max-width: 600px) {
+ 			 .residentialMaininfo {font-size: 42px}
+			
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .prev, .next,.text {font-size: 11px}					
+
+  /*END of Slideshow Box*/
+
