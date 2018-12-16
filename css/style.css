@@ -312,9 +312,7 @@ body, html {
 }
 
 @media only screen and (max-width: 600px) {
-   html, body{
-   height: 100%
-  }
+
   .res_1, .res_2, .res_3 {
   position: relative;
   opacity: 1; /* This is just for style. Feel free to delete. */
