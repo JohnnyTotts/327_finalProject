@@ -31,10 +31,10 @@
 			.slideshow-container{
 				position:relative;
 				width:100%;
-				padding-top:10%;
+				padding-top:90px;
+				
 			}
 			
-
 
 			.quote{
 				color: white;
@@ -55,7 +55,7 @@
 
 
 			p{
-				font-family:'Libre Baskerville', serif; 
+				font-family:"Helvetica"; 
 				font-size: 35pt;
 				position:relative;
 				text-align:center;
@@ -67,7 +67,7 @@
 
 
 			.end p{
-				font-family:'Libre Baskerville', serif; 
+				font-family:"Futura"; 
 				font-size: 35pt;
 				position:relative;
 				text-align:center;
@@ -116,6 +116,18 @@
 
 			}
 
+			.main_quote{ 
+				text-align:center;
+				background-color:#002A39;
+				color:orange;
+				position:relative;
+				margin: 35%;
+				padding:5px;
+				font-size: 48pt;
+				text-decoration:none;
+
+			}
+
 			.licenseNumber{
 			    	color:orange;
 			    	padding:5px;
@@ -123,6 +135,7 @@
 			    	font-family:"Arial";
 			    	font-size: 25px;
 			    	background-color:#002A39;
+			    	margin:10px;
 			    }
 
 
@@ -185,7 +198,13 @@
 			}
 
 
-			
+
+
+			footer{
+				text-align:center;
+				padding:5px;
+
+			}
 
 			
 			/* controls for repsonsive slide */
@@ -230,11 +249,26 @@
 				  }
 
 				.text_bottomSlide{
-					font-size: 15px;}
+					font-size: 15px;
+					text-align:center;
+				}
 
 				.socialIcon{
 					max-height: 40px;
 				}
+
+				.main_quote{ 
+					text-align:center;
+					background-color:#002A39;
+					color:orange;
+					position:relative;
+					margin:26%;
+					padding:5px;
+					font-size: 24pt;
+					text-decoration:none;
+
+			}
+
 				.licenseNumber{
 			    	color:orange;
 			    	padding:5px;
@@ -243,12 +277,13 @@
 			    	font-size: 25px;
 			    }
 
+
 			    .dot{
 			   		height:5px;
 			    }
 			    
 				p{
-					font-size:15px;
+					font-size:20px;
 			      }
 
 				}
@@ -281,9 +316,61 @@
 					position:sticky;
 
 
-				  }
+			  }
+
+				h1{
+				background-color:#002A39;
+				bottom: 0px;
+				width: 100%;
+				font: 15px "Arial", sans-serif;
+				color: white;
+				padding:5px;
+				}  
 				
-			}
+				h2{
+					font-size:15px;
+					
+				  }
+
+				.text_bottomSlide{
+					font-size: 15px;
+					text-align:center;
+				}
+
+				.socialIcon{
+					max-height: 40px;
+				}
+
+				.main_quote{ 
+					text-align:center;
+					background-color:#002A39;
+					color:orange;
+					position:relative;
+					margin:26%;
+					padding:5px;
+					font-size: 24pt;
+					text-decoration:none;
+
+				}
+
+				.licenseNumber{
+			    	color:orange;
+			    	padding:5px;
+			    	text-align: center;
+			    	font-family:"Arial";
+			    	font-size: 25px;
+			    }
+
+
+			    .dot{
+			   		height:5px;
+			    }
+			    
+				p{
+					font-size:20px;
+			      }
+
+				}
 
 			
 
@@ -321,7 +408,7 @@ height: 100%;
   min-height: 600px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 	.res_1, .res_2, .res_3 {
   			position: relative;
   			opacity: 1; 
@@ -332,6 +419,16 @@ height: 100%;
 }
 }
 
+@media screen and (max-width: 900px) {
+	.res_1, .res_2, .res_3 {
+  			position: relative;
+  			opacity: 1; 
+  			background-position: center;
+  			background-size: cover;
+  			background-attachment: scroll;
+
+}
+}
 /* Start commercial Parallax Content */
 
 .com_1, .com_2, .com_3 {
@@ -358,7 +455,8 @@ height: 100%;
   min-height: 600px;
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 600px) {
 	.com_1, .com_2, .com_3 {
   			position: relative;
   			opacity: 1; 
@@ -368,6 +466,15 @@ height: 100%;
 }
 }
 
+@media screen and (max-width: 900px) {
+	.com_1, .com_2, .com_3 {
+  			position: relative;
+  			opacity: 1; 
+  			background-position: center;
+  			background-size: cover;
+  			background-attachment: scroll;
+}
+}
 
 /* End Commercial Parallax Content */
 
@@ -397,7 +504,7 @@ height: 100%;
   min-height: 600px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 	.ind_1, .ind_2, .ind_3 {
   			position: relative;
   			opacity: 1; 
@@ -407,6 +514,17 @@ height: 100%;
 
 }
 }
+
+@media screen and (max-width: 900px) {
+	.ind_1, .ind_2, .ind_3 {
+  			position: relative;
+  			opacity: 1; 
+  			background-position: center;
+  			background-size: cover;
+  			background-attachment: scroll;
+}
+}
+
 
 
 /* End Industrial Parallax Content */
@@ -435,7 +553,7 @@ height: 100%;
   background-image: url("../images/white_spaceCab2.jpg");
   min-height: 600px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 	.cab_1, .cab_2, .cab_3 {
   			position: relative;
   			opacity: 1; 
@@ -445,7 +563,16 @@ height: 100%;
 
 }
 }
+@media screen and (max-width: 900px) {
+	.cab_1, .cab_2, .cab_3 {
+  			position: relative;
+  			opacity: 1; 
+  			background-position: center;
+  			background-size: cover;
+  			background-attachment: scroll;
 
+}
+}
 
   /* End Cabinet Parallax Content*/
  
