@@ -1,4 +1,62 @@
 			
+	/* -----MAIN LAYOUT STYLES----- */
+			
+			/*----- Start of Navigation Box -----*/
+
+			.secondaryInfo{
+				background-color: #c4c4c4;
+			}
+
+
+			.mainNav {
+				background-color:#002A39;
+				position:fixed;
+				top: 0;
+				width: 100%;
+				z-index: 100;
+				text-align: center;
+				list-style: none; 
+			
+			}
+
+			 .mainNav a {
+			 	color: white;
+			 	padding: 10px 16px;
+			 	text-decoration: none;
+			 	font-size: 15px;
+			 	display: inline-block;
+			}
+			
+
+			.mainNav h2:hover {
+				color:orange;
+			}
+
+			.mainNav .icon {
+				display:none;
+				float:right;
+			}
+
+
+			.logo{
+				max-height: 85px;
+				max-width: 65px;
+				margin: 0.5%;
+				float:left;
+			}
+
+			.logo h2 {
+				display: inline;
+			}
+
+			.logo .icon{
+				display:inline;
+			}
+
+			.icon{
+				margin-top:4%;
+			}
+	/*------ END MAIN NAV STYLES -----*/
 
 			h1{
 				background-color:#002A39;
@@ -26,7 +84,6 @@
 			}
 
 			
-				
 
 			.slideshow-container{
 				position:relative;
@@ -34,6 +91,11 @@
 				padding-top:90px;
 				
 			}
+
+			.text_bottomSlide{
+					font-size: 25px;
+					text-align:center;
+				}
 			
 
 			.quote{
@@ -125,6 +187,7 @@
 				padding:5px;
 				font-size: 48pt;
 				text-decoration:none;
+				width:100%;
 
 			}
 
@@ -140,63 +203,12 @@
 
 
 
-			.residentialMain {			/*Start of Navigation Box*/
-
+		
+	
+			.main_quote:hover {
+				color:white;
+				font-size:24pt;
 			}
-			.secondaryInfo{
-				background-color: #c4c4c4;
-			}
-
-
-			.mainNav {
-				background-color:#002A39;
-				position:fixed;
-				top: 0;
-				width: 100%;
-				z-index: 100;
-				text-align: center;
-				list-style: none; 
-			
-			}
-
-			 .mainNav a {
-			 	color: white;
-			 	padding: 10px 16px;
-			 	text-decoration: none;
-			 	font-size: 15px;
-			 	display: inline-block;
-			}
-			
-
-			.mainNav h2:hover {
-				color:orange;
-			}
-
-			.mainNav .icon {
-				display:none;
-				float:right;
-			}
-
-
-			.logo{
-				max-height: 85px;
-				max-width: 65px;
-				margin: 0.5%;
-				float:left;
-			}
-
-			.logo h2 {
-				display: inline;
-			}
-
-			.logo .icon{
-				display:inline;
-			}
-
-			.icon{
-				margin-top:4%;
-			}
-
 
 
 
@@ -207,7 +219,8 @@
 			}
 
 			
-			/* controls for repsonsive slide */
+	/*----- controls for repsonsive slide ------*/
+			
 			@media screen and (max-width: 600px) {
 				.mainNav a{display: none;}
 				.mainNav a.icon {
@@ -369,6 +382,14 @@
 				p{
 					font-size:20px;
 			      }
+
+			    footer{
+				text-align:center;
+				padding:5px;
+				font-size: 10px;
+
+			}
+
 
 				}
 
@@ -609,7 +630,7 @@ h3 {
 
 
 
-
+/* HOME PAGE STYLINGS */
 
 * {box-sizing: border-box} 							/*Start of Slideshow Box*/
 body {font-family: Verdana, sans-serif; margin:0}
@@ -706,7 +727,24 @@ img {vertical-align: middle;}
 			
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
-  .prev, .next,.text {font-size: 11px}					
+  .prev, .next,.text {
+  	font-size: 20px;	
+ }
 
+ .prev, .next{
+   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 6px;
+  margin-top: -5px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;				
+}
+}
   /*END of Slideshow Box*/
 
